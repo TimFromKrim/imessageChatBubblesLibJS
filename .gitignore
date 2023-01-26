@@ -1,5 +1,5 @@
 *.prettierrc
 *.DS_Store
 ._*
-/src/*
+src/*
 index.html
