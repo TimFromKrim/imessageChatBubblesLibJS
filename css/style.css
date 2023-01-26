@@ -1,0 +1,188 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "SFProDisplay";
+  src: url("../fonts/SFProDisplay-Regular.eot");
+  src: local("../fonts/SF Pro Display Regular"), local("../fonts/SFProDisplay-Regular"), url("../fonts/SFProDisplay-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SFProDisplay-Regular.woff2") format("woff2"), url("../fonts/SFProDisplay-Regular.woff") format("woff"), url("../fonts/SFProDisplay-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  --imcbl-margin-bottom-massage: .75em;
+  --imcbl-send-bg-color: #0B93F6;
+  --imcbl-send-text-color: white;
+  --imcbl-receive-bg-color: #E5E5EA;
+  --imcbl-receive-text-color: #171717;
+  --page-bg-color: white;
+}
+
+.imcbl-send {
+  background: var(--imcbl-send-bg-color);
+  color: var(--imcbl-send-text-color);
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+.imcbl-send::before {
+  right: -7px;
+  width: 20px;
+  height: 1em;
+  border-bottom-left-radius: 16px 14px;
+  z-index: -2;
+  background-color: var(--imcbl-send-bg-color);
+}
+.imcbl-send::after {
+  right: -10px;
+  width: 10px;
+  height: 1.1em;
+  background-color: var(--page-bg-color);
+  border-bottom-left-radius: 10px 10px;
+  z-index: -1;
+}
+
+.imcbl-receive {
+  background: var(--imcbl-receive-bg-color);
+  color: var(--imcbl-receive-text-color);
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+.imcbl-receive::before {
+  left: -7px;
+  width: 20px;
+  height: 1em;
+  border-bottom-right-radius: 16px 14px;
+  z-index: -2;
+  background-color: var(--imcbl-receive-bg-color);
+}
+.imcbl-receive::after {
+  left: -10px;
+  width: 10px;
+  height: 1.1em;
+  background-color: var(--page-bg-color);
+  border-bottom-right-radius: 10px 10px;
+  z-index: -1;
+}
+
+.imcbl-send, .imcbl-receive {
+  position: relative;
+  max-width: 75%;
+  word-wrap: break-word;
+  padding: 0.4em 0.75em;
+  border-radius: 1em;
+  font-family: "SFProDisplay", sans-serif;
+  font-weight: normal;
+  line-height: 1.1em;
+  z-index: 0;
+  font-size: 25px;
+}
+.imcbl-send::after, .imcbl-send::before, .imcbl-receive::after, .imcbl-receive::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+}
+
+.tail-w19::before {
+  width: 19px;
+}
+
+.tail-w18::before {
+  width: 18px;
+}
+
+.tail-w17::before {
+  width: 17px;
+}
+
+.tail-w16::before {
+  width: 16px;
+}
+
+.tail-w15::before {
+  width: 15px;
+}
+
+.tail-w14::before {
+  width: 14px;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 800px;
+  padding: 20px 20px;
+  border: solid 1px blue;
+}
