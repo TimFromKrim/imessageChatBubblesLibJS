@@ -1,7 +1,7 @@
 .imcbl-send, .imcbl-receive {
 	position: relative;
 	
-	max-width: 75%;
+	max-width: var(--imcbl-bubble-max-width);
 	word-wrap: break-word;
 
 	padding: 0.4em 0.75em;

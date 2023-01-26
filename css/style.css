@@ -79,11 +79,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 :root {
   --imcbl-margin-bottom-massage: .75em;
+  --imcbl-bubble-max-width: 75%;
   --imcbl-send-bg-color: #0B93F6;
   --imcbl-send-text-color: white;
   --imcbl-receive-bg-color: #E5E5EA;
   --imcbl-receive-text-color: #171717;
-  --page-bg-color: white;
+  --imcbl-page-bg-color: white;
 }
 
 .imcbl-send {
@@ -134,7 +135,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .imcbl-send, .imcbl-receive {
   position: relative;
-  max-width: 75%;
+  max-width: var(--imcbl-bubble-max-width);
   word-wrap: break-word;
   padding: 0.4em 0.75em;
   border-radius: 1em;
