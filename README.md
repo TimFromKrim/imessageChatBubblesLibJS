@@ -5,11 +5,10 @@ A simple BEM library to create an adaptive message effect like in imassage on yo
 
 
 ## Установка/Installation ⬇️
-1. Поместите папку imessageChatBubblesLib в свой проект / Insert folder imessageChatBubblesLib in your project.
-2. Подключите CSS / Сonnection CSS:
+1. Поместите папку imessageChatBubblesLibJS в свой проект / Insert folder imessageChatBubblesLib in your project.
 
-```html
-<link rel="stylesheet" href="imassageChatBubblesLib/imassageChatBubblesLib.css">
+```zth
+git submodule add https://github.com/TimTheHedge/imessageChatBubblesLibJS.git
 ```
 
 3. Подключите JS / Connection JS:
@@ -25,27 +24,27 @@ A simple BEM library to create an adaptive message effect like in imassage on yo
 
 ```css
 .container{ 
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 ```
-2. Для создания отправленного сообщения присвойте класс `.i-send` <br>
-	 To create a sent message, assign the class `.i-send`
+2. Для создания отправленного сообщения присвойте класс `.imcbl-send` <br>
+	 To create a sent message, assign the class `.imcbl-send`
 <img src=".github/images/send-massage.png" width="300"/>
 
-3. Для создания полученного сообщения присвойте класс `.i-receive` <br>
-	 To create a received message, assign the class `.i-receive`
+3. Для создания полученного сообщения присвойте класс `.imcbl-receive` <br>
+	 To create a received message, assign the class `.imcbl-receive`
 <img src=".github/images/recive-massage.png" width="300"/>
 
-> Элементы адаптивны относительно размера текста и выглядят хорошо в диапазоне FontSize: 12px - 50px. <br>
-> The elements are responsive with respect to text size and look good in the FontSize range: 12px - 50px.
+> Элементы адаптивны относительно размера текста и выглядят хорошо в диапазоне FontSize: 9px - 50px. <br>
+> The elements are responsive with respect to text size and look good in the FontSize range: 9px - 50px.
 
 4. Указать цвет фона страниц:
 	 Specify page background color:
 
 ```css
 :root{
-		--page-bg-color: white;
+  --imcbl-page-bg-color: white;
 }
 ```
 
@@ -57,13 +56,13 @@ A simple BEM library to create an adaptive message effect like in imassage on yo
 	 
 ```css
 :root{
-		--margin-bottom-massage: .75em; /* margin bottom every message / Нижний отступ каждого сообщения */
-		--send-bg-color: #0B93F6; /* Sent message background color / Цвет фона отправленного сообщения */
-		--send-text-color: white; /* Sent message text color / Цвет текста отправленного сообщения */
-		--receive-bg: #E5E5EA; /* Recived message background color / Цвет фона полученного сообщения */
-		--receive-text-color: #171717; /* Recived message text color / Цвет текста полученного сообщения */
-		--message-max-width: 75%; /* Max message width / Максимальная ширина сообщения */
-		--page-bg-color: white; ❗️❗️ /* Page color, it is very important to specify the exact color. The correct display of effects depends on this. / Цвет страницы, очень важно указать точный цвет. От этого зависит правильное отображение эффектов. */ ❗️❗️
+  --imcbl-margin-bottom-massage: .75em; /* margin bottom every message / Нижний отступ каждого сообщения */
+  --imcbl-send-bg-color: #0B93F6; /* Sent message background color / Цвет фона отправленного сообщения */
+  --imcbl-send-text-color: white; /* Sent message text color / Цвет текста отправленного сообщения */
+  --imcbl-receive-bg: #E5E5EA; /* Recived message background color / Цвет фона полученного сообщения */
+  --imcbl-receive-text-color: #171717; /* Recived message text color / Цвет текста полученного сообщения */
+  --imcbl-message-max-width: 75%; /* Max message width / Максимальная ширина сообщения */
+  --imcbl-page-bg-color: white; ❗️❗️ /* Page color, it is very important to specify the exact color. The correct display of effects depends on this. / Цвет страницы, очень важно указать точный цвет. От этого зависит правильное отображение эффектов. */ ❗️❗️
 }
 ```
 
