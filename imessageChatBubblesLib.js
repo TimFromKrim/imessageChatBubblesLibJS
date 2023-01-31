@@ -3,11 +3,11 @@
 let linkCSS = document.createElement("link");
 let DOMhead = document.querySelector("head");
 
-linkCSS.href = "css/style.css";
+linkCSS.href = "imessageChatBubblesLibJS/css/style.css";
 linkCSS.type = "text/css";
 linkCSS.rel = "stylesheet";
 
-DOMhead.appendChild(linkCSS);
+document.head.insertBefore(linkCSS, document.head.firstChild);
 
 // Adaptive tails
 
