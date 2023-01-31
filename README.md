@@ -61,7 +61,7 @@ git submodule add https://github.com/TimTheHedge/imessageChatBubblesLibJS.git
   --imcbl-send-text-color: white; /* Sent message text color / Цвет текста отправленного сообщения */
   --imcbl-receive-bg-color: #E5E5EA; /* Recived message background color / Цвет фона полученного сообщения */
   --imcbl-receive-text-color: #171717; /* Recived message text color / Цвет текста полученного сообщения */
-  --imcbl-message-max-width: 75%; /* Max message width / Максимальная ширина сообщения */
+  --imcbl-bubble-max-width: 75%; /* Max message width / Максимальная ширина сообщения */
   --imcbl-page-bg-color: white; ❗️❗️ /* Page color, it is very important to specify the exact color. The correct display of effects depends on this. / Цвет страницы, очень важно указать точный цвет. От этого зависит правильное отображение эффектов. */ ❗️❗️
 }
 ```
