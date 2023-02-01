@@ -11,8 +11,9 @@ document.head.insertBefore(linkCSS, document.head.firstChild);
 
 // Adaptive tails
 
-let imcblSend = document.querySelector(".imcbl-send");
-let imcblReceive = document.querySelector(".imcbl-receive");
+let imcblSendSingle = document.querySelector(".imcbl-send");
+let imcblSend = document.querySelectorAll(".imcbl-send");
+let imcblReceive = document.querySelectorAll(".imcbl-receive");
 
 function getNumPx(elem) {
 	let elem_fz_raw = window.getComputedStyle(elem).fontSize;
@@ -23,34 +24,105 @@ function getNumPx(elem) {
 	return elem_fz;
 }
 
-function chanceTail(elem) {
-	let mesFZ = getNumPx(elem);
+// function chanceTail(elem) {
+// 	let mesFZ = getNumPx(elem);
 
-	switch (mesFZ) {
-		case 20:
-			elem.classList.toggle("tail-w19");
-			console.log("ok");
-			break;
-		case 15:
-			elem.classList.toggle("tail-w18");
-			break;
-		case 13:
-			elem.classList.toggle("tail-w17");
-			break;
-		case 11:
-			elem.classList.toggle("tail-w16");
-			break;
-		case 10:
-			elem.classList.toggle("tail-w15");
-			break;
+// 	if (mesFZ <= 20 && mesFZ > 15) {
+// 		elem.classList.toggle("tail-w19");
+// 		console.log("ok");
+// 	} else if (mesFZ <= 15 && mesFZ > 13) {
+// 		elem.classList.toggle("tail-w18");
+// 	} else if (mesFZ <= 13 && mesFZ > 11) {
+// 		elem.classList.toggle("tail-w17");
+// 	} else if (mesFZ <= 11 && mesFZ > 10) {
+// 		elem.classList.toggle("tail-w16");
+// 	} else if (mesFZ <= 10) {
+// 		elem.classList.toggle("tail-w15");
+// 	}
+
+// 	if (mesFZ <= 9) elem.classList.add("tail-w14");
+
+// 	// location.reload();
+// }
+
+// imcblSend.forEach((el) => {
+// 	el.style.backgroundColor = 'yellow';
+// 	let mesFZ = getNumPx(imcblSendSingle);
+
+// 	if (mesFZ <= 20 && mesFZ > 15) {
+// 		el.classList.toggle("tail-w19");
+// 		console.log("ok");
+// 	} else if (mesFZ <= 15 && mesFZ > 13) {
+// 		el.classList.toggle("tail-w18");
+// 	} else if (mesFZ <= 13 && mesFZ > 11) {
+// 		el.classList.toggle("tail-w17");
+// 	} else if (mesFZ <= 11 && mesFZ > 10) {
+// 		el.classList.toggle("tail-w16");
+// 	} else if (mesFZ <= 10) {
+// 		el.classList.toggle("tail-w15");
+// 	}
+
+// 	if (mesFZ <= 9) elem.classList.add("tail-w14");
+// });
+
+// imcblReceive.forEach((el) => {
+// 	el.style.backgroundColor = 'yellow';
+// 	let mesFZ = getNumPx(imcblSendSingle);
+
+// 	if (mesFZ <= 20 && mesFZ > 15) {
+// 		el.classList.toggle("tail-w19");
+// 		console.log("ok");
+// 	} else if (mesFZ <= 15 && mesFZ > 13) {
+// 		el.classList.toggle("tail-w18");
+// 	} else if (mesFZ <= 13 && mesFZ > 11) {
+// 		el.classList.toggle("tail-w17");
+// 	} else if (mesFZ <= 11 && mesFZ > 10) {
+// 		el.classList.toggle("tail-w16");
+// 	} else if (mesFZ <= 10) {
+// 		el.classList.toggle("tail-w15");
+// 	}
+
+// 	if (mesFZ <= 9) elem.classList.add("tail-w14");
+// });
+
+
+document.addEventListener("DOMContentLoaded", imcblSend.forEach((el) => {
+	// el.style.backgroundColor = 'yellow';
+	let mesFZ = getNumPx(imcblSendSingle);
+
+	if (mesFZ <= 20 && mesFZ > 15) {
+		el.classList.toggle("tail-w19");
+		console.log("ok");
+	} else if (mesFZ <= 15 && mesFZ > 13) {
+		el.classList.toggle("tail-w18");
+	} else if (mesFZ <= 13 && mesFZ > 11) {
+		el.classList.toggle("tail-w17");
+	} else if (mesFZ <= 11 && mesFZ > 10) {
+		el.classList.toggle("tail-w16");
+	} else if (mesFZ <= 10) {
+		el.classList.toggle("tail-w15");
 	}
 
 	if (mesFZ <= 9) elem.classList.add("tail-w14");
-
-	// location.reload();
-}
-
-document.addEventListener("DOMContentLoaded", chanceTail(imcblSend));
+}));
 // imcblSend.addEventListener(, chanceTail(imcblSend));
-imcblReceive.addEventListener("DOMContentLoaded", chanceTail(imcblReceive));
+imcblReceive.addEventListener("DOMContentLoaded", imcblReceive.forEach((el) => {
+	// el.style.backgroundColor = 'yellow';
+	let mesFZ = getNumPx(imcblSendSingle);
+
+	if (mesFZ <= 20 && mesFZ > 15) {
+		el.classList.toggle("tail-w19");
+		console.log("ok");
+	} else if (mesFZ <= 15 && mesFZ > 13) {
+		el.classList.toggle("tail-w18");
+	} else if (mesFZ <= 13 && mesFZ > 11) {
+		el.classList.toggle("tail-w17");
+	} else if (mesFZ <= 11 && mesFZ > 10) {
+		el.classList.toggle("tail-w16");
+	} else if (mesFZ <= 10) {
+		el.classList.toggle("tail-w15");
+	}
+
+	if (mesFZ <= 9) elem.classList.add("tail-w14");
+}));
 // document.addEventListener("orientationchange", chanceTail(imcblReceive));
