@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", imcblSend.forEach((el) => {
 	if (mesFZ <= 9) elem.classList.add("tail-w14");
 }));
 // imcblSend.addEventListener(, chanceTail(imcblSend));
-imcblReceive.addEventListener("DOMContentLoaded", imcblReceive.forEach((el) => {
+document.addEventListener("DOMContentLoaded", imcblReceive.forEach((el) => {
 	// el.style.backgroundColor = 'yellow';
 	let mesFZ = getNumPx(imcblSendSingle);
 
