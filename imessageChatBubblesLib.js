@@ -85,44 +85,57 @@ function getNumPx(elem) {
 // 	if (mesFZ <= 9) elem.classList.add("tail-w14");
 // });
 
+// chanceTailSend();
+// chanceTailReceive();
 
-document.addEventListener("DOMContentLoaded", imcblSend.forEach((el) => {
-	// el.style.backgroundColor = 'yellow';
-	let mesFZ = getNumPx(imcblSendSingle);
+function chanceTailSend() {
+	imcblSend.forEach((el) => {
+		// el.style.backgroundColor = 'yellow';
+		let mesFZ = getNumPx(imcblSendSingle);
 
-	if (mesFZ <= 20 && mesFZ > 15) {
-		el.classList.toggle("tail-w19");
-		console.log("ok");
-	} else if (mesFZ <= 15 && mesFZ > 13) {
-		el.classList.toggle("tail-w18");
-	} else if (mesFZ <= 13 && mesFZ > 11) {
-		el.classList.toggle("tail-w17");
-	} else if (mesFZ <= 11 && mesFZ > 10) {
-		el.classList.toggle("tail-w16");
-	} else if (mesFZ <= 10) {
-		el.classList.toggle("tail-w15");
-	}
+		if (mesFZ <= 20 && mesFZ > 15) {
+			el.classList.toggle("tail-w19");
+			console.log("ok");
+		} else if (mesFZ <= 15 && mesFZ > 13) {
+			el.classList.toggle("tail-w18");
+		} else if (mesFZ <= 13 && mesFZ > 11) {
+			el.classList.toggle("tail-w17");
+		} else if (mesFZ <= 11 && mesFZ > 10) {
+			el.classList.toggle("tail-w16");
+		} else if (mesFZ <= 10) {
+			el.classList.toggle("tail-w15");
+		}
 
-	if (mesFZ <= 9) elem.classList.add("tail-w14");
-}));
+		if (mesFZ <= 9) elem.classList.add("tail-w14");
+	});
+}
+
+function chanceTailReceive() {
+	imcblReceive.forEach((el) => {
+		// el.style.backgroundColor = 'yellow';
+		let mesFZ = getNumPx(imcblSendSingle);
+
+		if (mesFZ <= 20 && mesFZ > 15) {
+			el.classList.toggle("tail-w19");
+			console.log("ok");
+		} else if (mesFZ <= 15 && mesFZ > 13) {
+			el.classList.toggle("tail-w18");
+		} else if (mesFZ <= 13 && mesFZ > 11) {
+			el.classList.toggle("tail-w17");
+		} else if (mesFZ <= 11 && mesFZ > 10) {
+			el.classList.toggle("tail-w16");
+		} else if (mesFZ <= 10) {
+			el.classList.toggle("tail-w15");
+		}
+
+		if (mesFZ <= 9) elem.classList.add("tail-w14");
+	});
+}
+
+// chanceTailSend();
+// chanceTailReceive();
+
+document.addEventListener("DOMContentLoaded", chanceTailSend());
 // imcblSend.addEventListener(, chanceTail(imcblSend));
-document.addEventListener("DOMContentLoaded", imcblReceive.forEach((el) => {
-	// el.style.backgroundColor = 'yellow';
-	let mesFZ = getNumPx(imcblSendSingle);
-
-	if (mesFZ <= 20 && mesFZ > 15) {
-		el.classList.toggle("tail-w19");
-		console.log("ok");
-	} else if (mesFZ <= 15 && mesFZ > 13) {
-		el.classList.toggle("tail-w18");
-	} else if (mesFZ <= 13 && mesFZ > 11) {
-		el.classList.toggle("tail-w17");
-	} else if (mesFZ <= 11 && mesFZ > 10) {
-		el.classList.toggle("tail-w16");
-	} else if (mesFZ <= 10) {
-		el.classList.toggle("tail-w15");
-	}
-
-	if (mesFZ <= 9) elem.classList.add("tail-w14");
-}));
+document.addEventListener("DOMContentLoaded", chanceTailReceive());
 // document.addEventListener("orientationchange", chanceTail(imcblReceive));
