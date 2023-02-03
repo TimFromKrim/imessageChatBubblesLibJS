@@ -77,5 +77,3 @@ function chanceTails() {
 }
 
 document.addEventListener("DOMContentLoaded", chanceTails());
-// window.addEventListener("scroll", chanceTailReceive());
-// window.addEventListener("scroll", chanceTailSend());
