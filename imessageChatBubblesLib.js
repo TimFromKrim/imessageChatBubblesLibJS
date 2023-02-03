@@ -70,8 +70,12 @@ function chanceTailReceive() {
 }
 
 function chanceTails() {
-	chanceTailSend();
-	chanceTailReceive();
+	setTimeout(function() {
+		chanceTailSend();
+		chanceTailReceive();
+	}, 1000);
 }
 
 document.addEventListener("DOMContentLoaded", chanceTails());
+// window.addEventListener("scroll", chanceTailReceive());
+// window.addEventListener("scroll", chanceTailSend());
