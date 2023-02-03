@@ -139,3 +139,10 @@ document.addEventListener("DOMContentLoaded", chanceTailSend());
 // imcblSend.addEventListener(, chanceTail(imcblSend));
 document.addEventListener("DOMContentLoaded", chanceTailReceive());
 // document.addEventListener("orientationchange", chanceTail(imcblReceive));
+
+function executeEveryFiveSeconds() {
+	setInterval(function() {
+		chanceTailSend();
+		chanceTailReceive()
+	}, 1000);
+}
